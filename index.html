@@ -1,85 +1,136 @@
 <!-- index.html -->
-
+<!-- Plant Shop-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A E-commerce shop for plants">
+  <meta name="Keywords" content=" indoor plants,outdoor plant, flowers">
   <link rel="stylesheet" href="dist/style.css">
 
-
   <title>Plant Shop</title>
-  <title>navigation menu</title>
+
+</head>
+<body>
+  <!--Start again (^^)-->
+
+<!--Header-->
+<header>
   <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#New">New</a>
-    <a href="#Buy">Buy</a>
-    <a href="#Sell">Sell</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <title>Logo example</title> 
-    <img src="images/plant.jpg" alt="A picture of a Plant" width="100" height="200"> 
+
+<!--Navigation menu-->
+    <nav aria-label="navigation menu">
+      <ul id="menubar" role="menubar" aria-label="navigation menu">
+        <li role="none">
+          <a href="#" role="menuitem">Home</a>
+        </li>
+        <li role="none">
+          <a href="#about" role="menuitem">About</a>
+        </li>
+        <li role="none">
+          <a href="#contact" role="menuitem">Contact</a>
+        </li>
+        <li role="none">
+          <a href="#Buy" role="menuitem">Buy</a>
+        </li>
+        <li role="none">
+          <a href="#Sell" role="menuitem">Sell</a>
+        </li>
+        <li role="none">
+          <a href="#New" role="menuitem">New</a>
+        </li>
+      </ul>
+    </nav>
+  
+<!--Logo-->
+    <div class="logo">
+    <img src="images/plant.jpg" alt="A picture of a Plant logo" width="300" height="300"> 
+    </div>
     <button>Sign In</button>
     <button>Sign up</button>
   </div>
-</head>
-<body>
+</header>
+<!--End of header-->
+
+<!--Start of main-->
+
+<main>
+
+<!--Hero section-->
+
   <header class="header">
-    <section id="Hero">
+    <section id="hero">
     <h1>A community to buy, sell & discover the magic of plants <button>Shop Now</button> </h1> </section>
-    
-    <div class ="Container"> 
-    <h2 class="Product-container"></h2>
+  
+    <div class ="container"> 
+    <h2 class="product-container"></h2>
 
-
-    <div class = "product" data-name ="P1">
+    <div class = "product">
     <img src="images/Aloe.jpg" alt="A picture of Aloe vera plant" width="200" height="200">
-    <h2>Plant name: Aloe vera</h2>
-    <div class="price">$25</div></div>
-    <div>
-      <p>&starf;&starf;&starf;&starf;&star;</p>
-  </div>
-
-    <div class = "product" data-name ="P2">
+    <div> 
+      <h2>Plant name: Aloe vera</h2>
+         <div class="price">$25</div></div>
+         <div>
+           <p>&starf;&starf;&starf;&starf;&star;</p>
+     </div>
+     </div>
+  
+    <div class = "product">
     <img src="images/dragontree.jpg" alt="A picture of dragontree plant" width="200" height="200">
-    <h2>Plant name: Aloe Dragon tree</h2>
-    <div class="price">$23</div></div>
-    <div>
-      <p>&starf;&starf;&starf;&starf;&star;</p>
-  </div>
-
-    <div class = "product" data-name ="P3">
+    <div> 
+      <h2>Plant name: Dragon tree</h2>
+         <div class="price">$35</div></div>
+         <div>
+           <p>&starf;&starf;&starf;&starf;&star;</p>
+     </div>
+     </div>
+  
+    <div class = "product">
     <img src="images/monstera.jpg" alt="A picture of monstera plant" width="200" height="200">
-    <h2>Plant name: Monstera</h2>
-    <div class="price">$40</div></div>
-    <div>
-      <p>&starf;&starf;&starf;&starf;&star;</p>
-  </div>
+    <div> 
+      <h2>Plant name: Monstera</h2>
+         <div class="price">$40</div></div>
+         <div>
+           <p>&starf;&starf;&starf;&starf;&star;</p>
+     </div>
+     </div>
 
-    <div class = "product" data-name ="P4">
+    <div class = "product">
     <img src="images/Zz.jpg" alt="A picture of Zz plant" width="200" height="200">
-    <h2>Plant name: ZZ Plant</h2>
-    <div class="price">$60</div></div>
-    <div>
-      <p>&starf;&starf;&starf;&starf;&star;</p>
-  </div>
+    <div> 
+      <h2>Plant name: ZZ plant</h2>
+         <div class="price">$60</div></div>
+         <div>
+           <p>&starf;&starf;&starf;&starf;&star;</p>
+         
+     </div>
+     </div>
 
+<!--End of main-->
+
+</main>
+
+  <!--The end of the page-->
+
+  <div class="end">
+    <div class="end-section">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
     </div>
-  </div>
-  <div>
 
-  </header>
-  <div class="Links">
-    <a class="active" href="#links">links</a>
-    <a href="#contact info">content info</a>
-    <a href="#Home">Home</a>
-    </div> 
+   <!--Footer-->
  <footer>
   <p>Subscribe to pur newsletter</p>
   <form action="">
-    <label for="Email">Email Addres:</label>
-    <input type="Email" placeholder="Enter your email">
+    <label for="email">Email Addres:</label>
+    <input type="email" placeholder="Enter your email">
   <button>Subscribtion</button>
     </form>
    
@@ -89,10 +140,6 @@
       <i class="fa-brands fa-facebook"></i>
       <i class="fa-brands fa-youtube"></i>
 
-      <button accesskey="B">accesskey button</button>
      <p>Made with love by Renad,copyright &copy; 2023. </p>
-      
-
 </footer>
-</body>
 </html>
