@@ -10,29 +10,27 @@
   <meta name="description" content="A E-commerce shop for plants">
   <meta name="Keywords" content=" indoor plants,outdoor plant, flowers">
   <link rel="stylesheet" href="dist/style.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <title>Plant Shop</title>
 </head>
 
 <body>
-  <!--Start again (^^)-->
+                                      <!--Start again (^^)-->
 
 <!--Header-->
 <header>
 
-
   <!--Logo-->
-
   <div class="logo">
     <img src="images/plant.jpg" alt="A picture of a Plant logo" width="200" height="200"> 
     </div>
    
-
 <!--Navigation menu-->
     <nav aria-label="navigation menu">
       <ul id="menubar" role="menubar" aria-label="navigation menu">
         <li role="none">
-          <a href="#" role="menuitem">Home</a>
+
+          <a href="#home" role="menuitem">Home</a>
         </li>
         <li role="none">
           <a href="#about" role="menuitem">About</a>
@@ -53,8 +51,8 @@
     </nav>
 
     <div id="Signbtns">
-      <button>Sign In</button>
-      <button>Sign up</button>
+      <button><span>Sign In</span></button>
+      <button><span>Sign up</span></button>
     </div>
   
 
@@ -62,25 +60,22 @@
 <!--End of header-->
 
 <!--Start of main-->
-
 <main>
 
 <!--Hero section-->
-
-    
   <section id="hero">
   <h1>Everyone loves a great garden.</h1>
   <h2>Gardening is a way to a healthy life.</h2>
-  <p>Plants are the eukaryotes that form the kingdom Plantae; they are predominantly photosynthetic. This means that they obtain their energy from sunlight, using chloroplasts derived from endosymbiosis with cyanobacteria to produce sugars from carbon dioxide and water, using the green pigment chlorophyll. </p>
-  <div id="shopbtn"><button>shop Now</button></div> </h1> </section>
+  <p>If you are looking for unique and thoughtful gifts for your dear ones, then you should opt for green plants. They bring in green & positive vibes & enhance the interiors beautifully. we presents a wide range of indoor and outdoor plants online that you can send for friends and family on birthday, festivals and housewarming occasions as a token of love and care.</p>
+  <div id="shopbtn"><button> <span>shop Now</span></button></div> </h1> </section>
 
 
   <!--Products-->
+    <div class ="card-container"> 
+    <h2 class="product-container-cards"></h2>
 
-    <div class ="container"> 
-    <h2 class="product-container"></h2>
-
-    <div class = "product">
+<!--Card items will go here-->
+    <div class = "card-item">
     <img src="images/Aloe.jpg" alt="A picture of Aloe vera plant" width="200" height="200">
     <div> 
       <h2>Plant name: Aloe vera</h2>
@@ -90,7 +85,7 @@
      </div>
      </div>
   
-    <div class = "product">
+    <div class = "card-item">
     <img src="images/dragontree.jpg" alt="A picture of dragontree plant" width="200" height="200">
     <div> 
       <h2>Plant name: Dragon tree</h2>
@@ -100,7 +95,7 @@
      </div>
      </div>
   
-    <div class = "product">
+    <div class = "card-item">
     <img src="images/monstera.jpg" alt="A picture of monstera plant" width="200" height="200">
     <div> 
       <h2>Plant name: Monstera</h2>
@@ -110,7 +105,7 @@
      </div>
      </div>
 
-    <div class = "product">
+    <div class = "card-item">
     <img src="images/Zz.jpg" alt="A picture of Zz plant" width="200" height="200">
     <div> 
       <h2>Plant name: ZZ plant</h2>
@@ -122,11 +117,9 @@
      </div>
 
 <!--End of main-->
-
 </main>
 
   <!--The end of the page-->
-
   <div class="end">
     <div class="end-section">
         <h3>Quick Links</h3>
@@ -138,21 +131,26 @@
     </div>
 
    <!--Footer-->
-
  <footer>
-  <p>Subscribe to pur newsletter</p>
+
+  <!--Form Email-->
+  <form class="form">
+  <span class="title">Subscribe to our newsletter.</span>
   <form action="">
     <label for="email">Email Addres:</label>
-    <input type="email" placeholder="Enter your email">
-  <div id="Supbtn"><button>Subscribtion</button></div>
-    </form>
-   
+    <input placeholder="Enter your email" type="email" name="email" id="email-address">
+    <button type="submit">Subscribe</button>
+  </div>
+</form>
+
+<!--Icons-->
+   <div class="icon">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <i class="fa-brands fa-x-twitter"></i>
       <i class="fa-brands fa-instagram"></i>
       <i class="fa-brands fa-facebook"></i>
       <i class="fa-brands fa-youtube"></i>
-
-     <p>Made with love by Renad,copyright &copy; 2023. </p>
+      <p class="last">Made with love by Renad,copyright &copy; 2023. </p>
+    </div>
 </footer>
 </html>
