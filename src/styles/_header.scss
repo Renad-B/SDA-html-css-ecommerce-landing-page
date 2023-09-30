@@ -1,0 +1,14 @@
+/*Header*/
+/*Add a sticky header or footer: Done */
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: rgb(42, 42, 42);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    z-index: 10;
+  }
+  

@@ -1,0 +1,28 @@
+section {
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.2em;
+    font-weight: 900;
+    margin-bottom: 40px;
+    color: rgb(58, 150, 58);
+  }
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.2em;
+    font-weight: 900;
+    margin-bottom: 60px;
+    color: rgb(58, 150, 58);
+  }
+
+  p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: black;
+  }
+}

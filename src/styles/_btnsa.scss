@@ -1,0 +1,126 @@
+
+
+/*Buttons*/
+
+#Signbtns button, #shopbtn button {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+#Supbtn button {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+button {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(17, 67, 19);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &::before {
+      left: 0;
+      right: 0;
+      opacity: 1;
+    }
+  }
+}
+
+/*Supscription*/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background: #606c88;
+  background: -webkit-linear-gradient(to right, #15701a, #017925);
+  background: linear-gradient(to right, #19842d, #246239);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 350px;
+}
+
+.title {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #fff;
+}
+
+.description {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: rgb(209 213 219);
+}
+
+.form div {
+  display: flex;
+  max-width: 28rem;
+  margin-top: 1rem;
+  column-gap: 0.5rem;
+
+  input {
+    outline: none;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+    color: rgb(255 255 255);
+    padding: 0.5rem 0.875rem;
+    background-color: rgb(255 255 255 / 0.05);
+    border: 1px solid rgba(253, 253, 253, 0.363);
+    border-radius: 0.375rem;
+    flex: 1 1 auto;
+
+    &::placeholder {
+      color: rgb(216, 212, 212);
+    }
+
+    &:focus {
+      border: 1px solid rgb(16, 173, 103);
+    }
+  }
+
+  button {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.625rem 0.875rem;
+    background-color: rgb(12, 95, 47);
+    border-radius: 0.375rem;
+    border: none;
+    outline: none;
+  }
+}
